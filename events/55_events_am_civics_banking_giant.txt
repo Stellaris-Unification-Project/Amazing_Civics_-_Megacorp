@@ -1,0 +1,43 @@
+
+
+###############################################################################
+### Civic: Off World Investors                                              ###
+###############################################################################
+
+namespace = events_am_civics_banking_giant
+
+# Updates Banking Giant Building Trade Value
+# Triggered by on_monthly_pulse_country
+country_event = {
+	id = events_am_civics_banking_giant.10
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = { }
+	
+	immediate = {
+		every_owned_planet = {
+			remove_modifier = static_modifier_am_civics_civic_am_civics_banking_giant
+		}
+		if = {
+			limit = {				
+				has_valid_civic = civic_am_civics_banking_giant
+				capital_scope = { has_building = building_am_civics_stellar_banking_institute }
+			}	
+			export_resource_stockpile_to_variable  = { resource = energy variable = ryika_am_banking_giant_energy_stockpile_interest }
+			
+			# 6% Interest Rate...
+			multiply_variable = { which = ryika_am_banking_giant_energy_stockpile_interest value = 0.06 }
+			
+			# ...over 12 Months
+			divide_variable = { which = ryika_am_banking_giant_energy_stockpile_interest value = 12 }
+
+			capital_scope = {
+				add_modifier = {
+					modifier = static_modifier_am_civics_civic_am_civics_banking_giant
+					multiplier = owner.ryika_am_banking_giant_energy_stockpile_interest
+				}
+			}
+		}
+	}
+}

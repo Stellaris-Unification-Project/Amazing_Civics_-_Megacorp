@@ -1,0 +1,44 @@
+
+
+###############################################################################
+### Civic: Military-Industrial Complex                                      ###
+###############################################################################
+
+namespace = events_am_civics_criminal_connections
+
+### Triggered by on_action: on_game_start_country
+### Adds the Crime Lord Deal Modifier at the start of the game
+### Also prevents Criminal Underworld from appearing
+country_event = {
+	id = events_am_civics_criminal_connections.1
+	hide_window = yes
+	
+	is_triggered_only = yes		
+	trigger = { has_valid_civic = civic_am_civics_criminal_connections }
+
+	immediate = { 
+		capital_scope = { add_modifier = { modifier = crime_lord_deal } } 
+		every_owned_planet = {
+			limit = { NOT = { has_planet_flag = criminal_underworld_disappeared } }
+			set_timed_planet_flag = { flag = criminal_underworld_disappeared days = 30 } 
+		} 
+	}
+}
+
+### Triggered by on_action: on_monthly_pulse_country
+### Prevents Criminal Underworld from appearing
+country_event = {
+	id = events_am_civics_criminal_connections.2
+	hide_window = yes
+	
+	is_triggered_only = yes		
+	trigger = { has_valid_civic = civic_am_civics_criminal_connections }
+
+	
+	immediate = { 
+		every_owned_planet = {
+			limit = { NOT = { has_planet_flag = criminal_underworld_disappeared } }
+			set_timed_planet_flag = { flag = criminal_underworld_disappeared days = 30 }
+		} 
+	}
+}

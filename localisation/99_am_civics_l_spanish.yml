@@ -1,0 +1,281 @@
+﻿
+
+l_spanish:
+
+ #######################################################
+ ### UI                                              ###
+ #######################################################
+ 
+ # Base game modifiers that aren't localized
+ mod_megastructures_habitat_influence_cost_mult:0 "Costo de influencia del hábitat"
+ mod_job_merchant_per_crime:0 "§G+1§!  $job_merchant$ por $VALUE$ Crimen planetario"
+ mod_job_merchant_per_crime_short:0 "\n§G+1§! £mod_job_merchant_add£ por $VALUE$ £crimen"
+ 
+ origin_am_civics_locust_capitalism_start_screen_message_1:0 "Los [GetSpeciesName] han estado viviendo bajo un sistema de capitalismo langosta durante unos cientos de años: una sociedad dominada por una explotación despiadada, donde los informes trimestrales de ganancias se han convertido en las únicas medidas de éxito. Las cuestiones sociales y medioambientales se han dejado de lado." 
+ origin_am_civics_locust_capitalism_start_screen_message_2:0 "La comunidad científica, o lo poco que logró mantenerse rentable, ha estado advirtiendo durante décadas que el modelo económico actual no será sostenible por mucho más tiempo y que los [GetSpeciesName] están en el proceso de llevar a su planeta a la extinción en masa. Pero esto a caído en oídos sordos."
+ origin_am_civics_locust_capitalism_start_screen_message_3:0 "Ahora, con el descubrimiento de la red hipervias, sus advertencias parecen menos importantes que nunca: se ha abierto una galaxia completa llena de recursos y oportunidades para [GetName]. En contraste, el futuro de [GetHomeWorldName] parece levemente insignificante."
+ tooltip_civic_am_civics_pacifist:0 "es algún grado de §Ypacifista§!"
+ tooltip_civic_am_civics_not_pacifist:0 "NO es §Ypacifista§!"
+
+ #######################################################
+ ### CIVICS                                          ###
+ #######################################################
+ 
+ ### Off-World Investors
+ civic_am_civics_off_world_investors:0 "Inversores Off-World"
+ civic_am_civics_off_world_investors_desc:0 "La galaxia está llena de tesoros y curiosidades naturales que esperan ser explotadas. Esta megacorporación busca constantemente nuevas formas de obtener beneficios de los muchos bienes diferentes que se han encontrado en planetas deshabitados."
+ tooltip_civic_am_civics_off_world_investors_effects:0 "Al final del año, cada depósito de £trade_value£ §Y$TRADE_VALUE$§! dentro de nuestro territorio se reevalúa y §Ytiene una pequeña posibilidad de actualizarse§! a un valor más alto.\n\nLos depósitos de alto valor tienen menos probabilidades de actualizarse, y los depósitos no pueden actualizarse más allá del §Y$TRADE_VALUE$§! 10."
+ 
+ ### Stellar Travel Agency
+ civic_am_civics_stellar_travel_agency:0 "Agencia de viajes estelares"
+ civic_am_civics_stellar_travel_agency_desc:0 "Esta megacorporación ha ganado la mayor parte de su influencia al monopolizar los viajes espaciales privados."
+ tooltip_civic_am_civics_stellar_travel_agency_effects:0 "§HDesbloquea el edificio de base estelar:§! Barrios turísticos.\nProduces: £unity£4 | Mantenimiento: £energy£4\nTodos los planetas de este sistema producen §G+25%§! £trade_value£ §Y$TRADE_VALUE$§!, y han aumentado un §G+25%§! la §Yposibilidad de reasentamiento automático§!."
+ 
+ ### Social Media Giant
+ civic_am_civics_social_media_giant:0 "Gigante de las redes sociales"
+ civic_am_civics_social_media_giant_desc:0 "Esta megacorporación pasó de ser un proveedor de redes sociales a convertirse en un organismo gubernamental.\n\nSus ciudadanos están integrados en un sistema de puntuación social obligatorio: los usuarios con una buena posición social y una alta actividad en las redes sociales son recompensados con el acceso a beneficios únicos.\n\nSe desaconseja la toxicidad, la inactividad y la interacción con usuarios de puntajes sociales bajos."
+ tooltip_civic_am_civics_social_media_giant_effects:0 "§HDesbloquea el edificio:§! Centro de red social\nProduces: £society_research£3\nSe pueden agregar efectos adicionales a través de decisiones planetarias."
+   
+ ### Knowledge is Profit
+ civic_am_civics_knowledge_is_profit:0 "El conocimiento es beneficio"
+ civic_am_civics_knowledge_is_profit_desc:0 "Esta megacorporación está especializada en adquirir conocimiento y venderlo o revenderlo a los interesados."
+ tooltip_civic_am_civics_knowledge_merchants_effects:0 "Gana £energy£§G100§! y £influence£§G10§! después de sondear completamente un sistema."
+ 
+ ### Urban Pacification Tools
+ civic_am_civics_urban_parcification_tools:0 "Herramientas para la pacificación urbana"
+ civic_am_civics_urban_parcification_tools_desc:0 "Esta megacorporación opera una fuerza policial mecanizada. Altamente eficientes y no reprimidas por escrúpulos morales, estas máquinas hacen cumplir la ley tal como está escrita sin indulgencia ni piedad.\n\nA menos que el transgresor sea accionista de la megacorporación."
+ tooltip_civic_am_civics_urban_parcification_tools_effects:0 "§HDesbloquea $BRANCH_OFFICE_BUILDING$§!: Estación de policía central.\nProduce: £energy£20, o £energy£40 si el £crime£ crimen está por debajo de 20. Otorga +1 trabajo de £job_enforcer£ policia.\n    "
+ 
+ ### Corporate Growth
+ civic_am_civics_corporate_growth:0 "Crecimiento corporativo"
+ civic_am_civics_corporate_growth_desc:0 "Para esta megacorporación parece imposible imaginar algo con más potencial de crecimiento que un planeta habitable esperando ser colonizado."
+ tooltip_civic_am_civics_corporate_growth_effects:0 "Las colonias recién establecidas comienzan con un §Y$district_city$§!, lo que da §G+15%§! crecimiento por inmigración y un aumento del §G+15%§! por £job£ trabajos que producen £minerals£ §Y$minerals$§!, £energy£ §Y$energy$§! y £food£ §Y$food$§! por 20 años."
+ 
+ ### Charitable Efforts
+ civic_am_civics_charitable_efforts:0 "Esfuerzos caritativos"
+ civic_am_civics_charitable_efforts_desc:0 "Esta megacorporación alguna vez fue una organización benéfica. Ahora se ha dedicado a generar ganancias, pero aún invierte una parte de sus ingresos en causas que mejoran la vida de los necesitados."
+ tooltip_civic_am_civics_charitable_efforts_effects:0 "Gana un modificador de §HOpinión positiva§! con la mayoría de los tipos de imperio."
+ 
+ ### Locust Capitalism
+ origin_am_civics_locust_capitalism:0 "Capitalismo langosta"
+ origin_am_civics_locust_capitalism_desc:0 "El capitalismo no regulado, centrado únicamente en los márgenes de ganancia y el crecimiento exponencial ha dominado este Imperio durante siglos. Las voraces prácticas comerciales de la corporación gobernante se enfocan solo en drenar todas las ganancias de su entorno de la manera más eficiente posible sin tener en cuenta la sostenibilidad."
+ tooltip_origin_am_civics_locust_capitalism_effects:0 "§RAdvertencia: Origen desafiante§!\n\n§YEl uso insostenible de los recursos hace que los depósitos mineros de nuestra propiedad y de nuestros sujetos se agoten con el tiempo.\n\nLos planetas de nuestra propiedad se agotan con el tiempo y eventualmente serán destruidos.§!\n  "
+ 
+ ### Military-Industrial Complex
+ civic_am_civics_military_industrial_complex:0 "Complejo militar-industrial"
+ civic_am_civics_military_industrial_complex_desc:0 "Esta megacorporación está especializada en la producción de equipamiento militar. Parece que algunas de sus decisiones diplomáticas están influenciadas por la perspectiva de generar beneficios a partir del conflicto."
+ tooltip_civic_am_civics_military_industrial_complex_effects:0 "Después de entrar en una guerra, elija §Yuna§! de las siguientes opciones:\n\n§HFondos para la industria armamentística§!\n$MOD_SHIP_FIRE_RATE_MULT$: §G+10%§!\n$TRADE_VALUE$: §G+10%§!\n\n§HFondos para los fabricantes de armas§!\n$MOD_ARMY_DAMAGE_MULT$: §G+25%§!\n$MOD_ARMY_ATTACK_HEALTH_MULT$: §G+10%§!\n$TRADE_VALUE$: §G+10%§!\n\n§HFondos para los astilleros§!\n$MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$: §G+25%§!\n$MOD_STARBASE_SHIPYARD_BUILD_COST_MULT$: §G-10%§!\n$TRADE_VALUE$: §G+10%§!\n\nLa bonificación elegida se mantiene activa durante 15 años. Si bien ninguno de estos bonos está activo, el valor comercial se reduce en §R5%§!."
+ 
+ ### banking_giant
+ civic_am_civics_banking_giant:0 "Gigante bancario"
+ civic_am_civics_banking_giant_desc:0 "Esta megacorporación fue una vez un gigante bancario antes de usar su influencia para facilitar una toma hostil del gobierno mundial."
+ tooltip_civic_am_civics_banking_giant_effects:0 "§HDesbloquea el edificio único:§! Institucion bancaria.\nPermite que el Imperio genere £trade_value£ §Y$TRADE_VALUE$§! basado en la cantidad de £energy£ §YCreditos§! en nuestras reservas, a una tasa de interés anual de aproximadamente §Y6%§!.\n\nEl £trade_value£ §Y$TRADE_VALUE$§! se aplica como un §Ymodificador de imperio§!."
+ 
+ ### Mining Consortium
+ civic_am_civics_mining_consortium:0 "Consorcio minero"
+ civic_am_civics_mining_consortium_desc:0 "Un consorcio minero se ha convertido en un actor muy influyente en esta megacorporación. El ahora organismo pseudo-gubernamental ha ganado el control del monopolio en muchas ramas de la industria."
+ 
+ ### Guild of Engineers
+ civic_am_civics_guild_of_engineers:0 "Gremio de ingenieros"
+ civic_am_civics_guild_of_engineers_desc:0 "Un influyente gremio de ingenieros altamente calificados está activo en esta megacorporación.\n\nSi bien no están directamente involucrados en el proceso de toma de decisiones, sus esfuerzos de cabildeo parecen tener una gran influencia en los que sí lo están."
+ 
+ ### Criminal Connections
+ civic_am_civics_criminal_connections:0 "Conexiones criminales"
+ civic_am_civics_criminal_connections_desc:0 "Los gerentes de esta megacorporación están en estrecho contacto con su inframundo criminal. Gran parte de la toma de decisiones gubernamentales se basa en acuerdos clandestinos entre los líderes de ambos lados y, a menudo, se hace a expensas del público en general."
+ civic_am_civics_criminal_connections_effect:0 "Comienza con el modificador §YTrato con el señor del crimen§! ya activo en su capital."
+ 
+ #######################################################
+ ### STARBASE BUILDINGS                              ###
+ #######################################################
+ 
+ sm_starbase_building_am_civics_tourist_quarters:0 "Barrios turísticos"
+ sm_starbase_building_am_civics_tourist_quarters_desc:0 "\nBarrios turísticos dedicados para turistas y viajeros planetarios de este sistema."
+ starbase_building_am_civics_tourist_quarters_desc_modifier:0 "Produce: £unity£4\n\nTodos los planetas de este sistema producen §G+25%§! £trade_value£ §Y$TRADE_VALUE$§!, y tener un §G+25%§! más de §Yposibilidad de reasentamiento automático§!"
+
+ #######################################################
+ ### BUILDINGS                                       ###
+ #######################################################
+ 
+ building_am_civics_omni_police_station:0 "Estación de policía central"
+ building_am_civics_omni_police_station_desc:0 "Una comisaría que opera una fuerza policial mecanizada. La megacorporación recibe un pago mensual por sus servicios."
+ building_am_civics_omni_police_station_triggered_desc:0 "Produce £energy£20, o £energy£40 si £crime£ el crimen está por debajo de 20.\n\n$job_enforcer_effect_desc$"
+
+ building_am_civics_social_media_hub:0 "Centro de red social"
+ building_am_civics_social_media_hub_desc:0 "Una instalación gubernamental dedicada que centraliza la red de medios sociales en todo el planeta."
+ building_am_civics_social_media_hub_triggered_desc:0 "Se pueden agregar efectos adicionales con Decisiones planetarias una vez que se complete el edificio.\n  "
+ building_am_civics_social_media_hub_triggered_desc_constructed:0 "Se pueden agregar efectos adicionales con Decisiones planetarias.\n  "
+ building_am_civics_social_media_hub_triggered_desc_maxed:0 "§GThis building has all possible upgrades!§!\n  "
+ 
+ building_am_civics_stellar_banking_institute:0 "Institucion bancaria"
+ building_am_civics_stellar_banking_institute_desc:0 "Un gigantesco complejo bancario centralizado donde se invierte dinero para generar beneficios. Los sistemas de comercio automatizados manejan la mayoría de las transiciones y venden y compran acciones a un ritmo rápido."
+ building_am_civics_stellar_banking_institute_summary:0 "Genera §Y$TRADE_VALUE$§! en base a la cantidad de £energy£ §YCreditos§! en nuestras bóvedas bancarias, a una tasa de interés anual de §Y6%§!.\n\nEl £trade_value£ §Y$TRADE_VALUE$§! se aplica como un  §Ymodificador planetario§!.\n\n§YSolo se puede construir en la capital.§!\n  "
+ 
+ #######################################################
+ ### DECISIONS                                       ###
+ #######################################################
+ 
+ ## Used in _effect-texts below.
+ decision_am_civics_generic_influence_cost_tt:0 "El costo de §Y£influence£ influencia§! de otras decisiones de redes sociales en este planeta se incrementa en §R25§!."
+ 
+ decision_am_civics_building_social_media_hub_1:0 "Redes sociales: análisis de comportamiento"
+ decision_am_civics_building_social_media_hub_1_desc:0 "Se puede obtener mucho conocimiento sobre el comportamiento humano analizando el comportamiento de individuos o grupos en las redes sociales. Se puede obtener mucho más conocimiento manipulando su entorno de redes sociales y analizando sus reacciones."
+ decision_am_civics_building_social_media_hub_1_effect:0 "£building£ §Y$building_am_civics_social_media_hub$:§!\n$mod_planet_jobs_society_research_produces_mult$: §G+35%§!\n$decision_am_civics_generic_influence_cost_tt$"
+ 
+ decision_am_civics_building_social_media_hub_2:0 "Redes sociales: algoritmo de obediencia"
+ decision_am_civics_building_social_media_hub_2_desc:0 "Al controlar el contenido disponible para los usuarios en nuestra red social, podemos dirigir a nuestra población hacia una mentalidad más tolerante."
+ decision_am_civics_building_social_media_hub_2_effect:0 "£building£ §Y$building_am_civics_social_media_hub$:§!\n$MOD_PLANET_STABILITY_ADD$ aumenta §G+5§!\n\n$decision_am_civics_generic_influence_cost_tt$"
+ 
+ decision_am_civics_building_social_media_hub_3:0 "Redes sociales: comerciales dirigidos"
+ decision_am_civics_building_social_media_hub_3_desc:0 "Los anuncios publicitarios dirigidos se colocan en las redes sociales para "mejorar" los hábitos de gasto de nuestros ciudadanos."
+ decision_am_civics_building_social_media_hub_3_effect:0 "£building£ §Y$building_am_civics_social_media_hub$:§!\n+25% £trade_value£ $TRADE_VALUE$\n\n$decision_am_civics_generic_influence_cost_tt$"
+ 
+ decision_am_civics_building_social_media_hub_4:0 "Redes sociales: protocolos de productividad"
+ decision_am_civics_building_social_media_hub_4_desc:0 "Al enviar mensajes subliminales a nuestra población, podemos mejorar su ética laboral."
+ decision_am_civics_building_social_media_hub_4_effect:0 "£building£ §Y$building_am_civics_social_media_hub$:§!\n$mod_planet_jobs_worker_produces_mult$ aumenta un §G5%§!\n\n$decision_am_civics_generic_influence_cost_tt$"
+ 
+ decision_am_civics_building_social_media_hub_5:0 "Redes sociales: personalidades estatales de los medios"
+ decision_am_civics_building_social_media_hub_5_desc:0 "Al crear y promover personalidades de las redes sociales controladas por el gobierno (Influencers), podemos dirigir activamente los pensamientos y opiniones de nuestros ciudadanos."
+ decision_am_civics_building_social_media_hub_5_effect:0 "£building£ §Y$building_am_civics_social_media_hub$:§!\n$planet_entertainers$: §G+2§!\n\n$decision_am_civics_generic_influence_cost_tt$"
+ 
+ #######################################################
+ ### STATIC MODIFIERS                                ###
+ #######################################################
+ 
+ static_modifier_am_civics_corporate_growth:0 "Crecimiento corporativo"
+ static_modifier_am_civics_corporate_growth_desc:0 "Todo un planeta en recursos está esperando ser explotado ..."
+ 
+ static_modifier_am_civics_destructive_flight:0 "Vuelo destructivo"
+ static_modifier_am_civics_destructive_flight_desc:0 "La predicción de la destrucción inminente del planeta ha provocado que la población de este planeta entre en un estado de pánico. Se está produciendo un éxodo masivo.\n\nCada pocos meses, una £pop£ población migra a otro planeta, hasta que solo quedan unas pocas."
+ 
+ static_modifier_am_civics_destructive_panic:0 "Pánico destructivo"
+ static_modifier_am_civics_destructive_panic_desc:0 "La predicción de la destrucción inminente del planeta ha provocado que la población de este planeta entre en un estado de pánico. El gobierno les impide huir del planeta y su miedo existencial a la muerte se ha convertido en disturbios masivos."
+  
+ ### Base Description
+ static_modifier_am_civics_planet_decay:0 "Planeta drenado - Etapa"
+ static_modifier_am_civics_planet_decay_desc:0 "Este planeta ha sido dañado por el comportamiento despiadado de una corporación langosta.\n\nEl daño causado al planeta aumenta con el tiempo mientras la megacorporación tiene una colonia en este planeta. Los planetas con grandes cantidades de £pop£ población se degradan más rápido que los planetas con menos.\n\nA Etapa 10 El planeta drenado ha sufrido daños críticos y es probable que se enfrente a un evento de extinción masiva."
+ 
+ static_modifier_am_civics_planet_decay_1:0 "$static_modifier_am_civics_planet_decay$ 1"
+ static_modifier_am_civics_planet_decay_1_desc:0 "$static_modifier_am_civics_planet_decay_desc$"
+ static_modifier_am_civics_planet_decay_2:0 "$static_modifier_am_civics_planet_decay$ 2"
+ static_modifier_am_civics_planet_decay_2_desc:0 "$static_modifier_am_civics_planet_decay_desc$"
+ static_modifier_am_civics_planet_decay_3:0 "$static_modifier_am_civics_planet_decay$ 3"
+ static_modifier_am_civics_planet_decay_3_desc:0 "$static_modifier_am_civics_planet_decay_desc$"
+ static_modifier_am_civics_planet_decay_4:0 "$static_modifier_am_civics_planet_decay$ 4"
+ static_modifier_am_civics_planet_decay_4_desc:0 "$static_modifier_am_civics_planet_decay_desc$"
+ static_modifier_am_civics_planet_decay_5:0 "$static_modifier_am_civics_planet_decay$ 5"
+ static_modifier_am_civics_planet_decay_5_desc:0 "$static_modifier_am_civics_planet_decay_desc$"
+ static_modifier_am_civics_planet_decay_6:0 "$static_modifier_am_civics_planet_decay$ 6"
+ static_modifier_am_civics_planet_decay_6_desc:0 "$static_modifier_am_civics_planet_decay_desc$"
+ static_modifier_am_civics_planet_decay_7:0 "$static_modifier_am_civics_planet_decay$ 7"
+ static_modifier_am_civics_planet_decay_7_desc:0 "$static_modifier_am_civics_planet_decay_desc$"
+ static_modifier_am_civics_planet_decay_8:0 "$static_modifier_am_civics_planet_decay$ 8"
+ static_modifier_am_civics_planet_decay_8_desc:0 "$static_modifier_am_civics_planet_decay_desc$"
+ static_modifier_am_civics_planet_decay_9:0 "$static_modifier_am_civics_planet_decay$ 9"
+ static_modifier_am_civics_planet_decay_9_desc:0 "$static_modifier_am_civics_planet_decay_desc$"
+ static_modifier_am_civics_planet_decay_10:0 "$static_modifier_am_civics_planet_decay$ 10"
+ static_modifier_am_civics_planet_decay_10_desc:0 "Este planeta ha sido dañado por el comportamiento despiadado de una corporación.\n\n§REl daño causado al planeta se ha vuelto crítico. Es probable que pronto se enfrente a un evento de extinción masiva.§!" 
+ 
+ static_modifier_am_civics_military_industrial_complex_idle:0 "Complejo militar-industrial subutilizado"
+ static_modifier_am_civics_military_industrial_complex_idle_desc:0 "Hace mucho que no participamos en una guerra. Esto tiene un efecto negativo en nuestra industria."
+ static_modifier_am_civics_military_industrial_complex_choice_1:0 "Financiamiento: Industria armamentística"
+ static_modifier_am_civics_military_industrial_complex_choice_1_desc:0 "Al proporcionar a nuestra industria armamentística fondos adicionales, hemos aumentado la eficiencia de nuestros barcos."
+ static_modifier_am_civics_military_industrial_complex_choice_2:0 "Financiamiento: Fabricantes de armas"
+ static_modifier_am_civics_military_industrial_complex_choice_2_desc:0 "Al proporcionar fondos adicionales a los fabricantes de armas, hemos aumentado la eficiencia de nuestros ejércitos."
+ static_modifier_am_civics_military_industrial_complex_choice_3:0 "Financiamiento: Astilleros"
+ static_modifier_am_civics_military_industrial_complex_choice_3_desc:0 "Al proporcionar a nuestros astilleros fondos adicionales, hemos aumentado nuestra capacidad de producción de barcos."
+ 
+ static_modifier_locust_capital_evacuation:0 "Fondo de Inversión en Crisis"
+ 
+ static_modifier_am_civics_locust_habitat_1:0 "Hábitat en descomposición"
+ static_modifier_am_civics_locust_habitat_1_desc:0 "Este hábitat se encuentra en un estado terrible.\nSiglos de explotación y un presupuesto de mantenimiento diseñado para obtener el máximo beneficio han pasado factura."
+ 
+ static_modifier_am_civics_locust_habitat_2:0 "$static_modifier_am_civics_locust_habitat_1$"
+ static_modifier_am_civics_locust_habitat_2_desc:0 "$static_modifier_am_civics_locust_habitat_1_desc$"
+ 
+ static_modifier_am_civics_locust_habitat_3:0 "$static_modifier_am_civics_locust_habitat_1$"
+ static_modifier_am_civics_locust_habitat_3_desc:0 "$static_modifier_am_civics_locust_habitat_1_desc$\n\n§HSe ha aplicado Neo-Duct-Tape para reparar una brecha en el casco.§!"
+ 
+ static_modifier_am_civics_locust_habitat_4:0 "$static_modifier_am_civics_locust_habitat_1$"
+ static_modifier_am_civics_locust_habitat_4_desc:0 "$static_modifier_am_civics_locust_habitat_3_desc$"
+ 
+ static_modifier_am_civics_locust_habitat_5:0 "$static_modifier_am_civics_locust_habitat_1$"
+ static_modifier_am_civics_locust_habitat_5_desc:0 "$static_modifier_am_civics_locust_habitat_1_desc$\n\n§HSe ha aplicado Neo-Duct-Tape para reparar una brecha en el casco, ¡dos veces!§!"
+ 
+ static_modifier_am_civics_locust_habitat_6:0 "$static_modifier_am_civics_locust_habitat_1$"
+ static_modifier_am_civics_locust_habitat_6_desc:0 "$static_modifier_am_civics_locust_habitat_1_desc$\n\n§HSe ha aplicado Neo-Duct-Tape para reparar una brecha en el casco - ¡TRES VECES! Esto no puede ser bueno ...§!"
+ 
+ static_modifier_am_civics_civic_am_civics_banking_giant:0 "Colección de interés"
+ static_modifier_am_civics_civic_am_civics_banking_giant_desc:0 "Nuestra §YInstitucion bancaria§! genera intereses sobre nuestras reservas de £energy£ creditos, a una tasa anual del §Y6%§!."
+ 
+ #######################################################
+ ### TECHNOLOGIES                                    ###
+ #######################################################
+ 
+ tech_am_civics_locust_recycling_industries:0 "Industrias de reciclaje"
+ tech_am_civics_locust_recycling_industries_desc:0 "Si se pueden obtener ganancias, tal vez, también se pueden volver a generar ganancias."
+ tech_am_civics_locust_recycling_industries_effect:0 "§HEfecto:§! Los planetas se drenan un 50% más lentamente.\n§HEfecto:§! Los depósitos orbitales se agotan un 50% más lento."
+ 
+ tech_am_civics_locust_sustainability_industries:0 "Industria sustentable"
+ tech_am_civics_locust_sustainability_industries_desc:0 "Al crear una industria en torno al sustento de nuestros planetas, podemos mantenerlos habitables Y generar muchos beneficios."
+ tech_am_civics_locust_sustainability_industries_effect:0 "§HEfecto:§! Los planetas ya no drenan.\n§HEfecto:§! Los depósitos orbitales ya no se agotan."
+ 
+ #######################################################
+ ### OPINION MODIFIERS                               ###
+ #######################################################
+ 
+ triggered_opinion_am_civics_is_charitable_efforts:0 "Megacorporación benéfica"
+ 
+ #######################################################
+ ### PERSONALITIES                                   ###
+ #######################################################
+ 
+ personality_am_civics_locust:0 "Capitalistas langostas"
+ personality_am_civics_locust_desc:0 "A los capitalistas langostas solo les importa una cosa: las ganancias. Harán todo lo que consideren necesario para mejorar sus informes trimestrales."
+ personality_am_civics_charitable_capitalist:0 "Capitalistas éticos"
+ personality_am_civics_charitable_capitalist_desc:0 "Capitalistas éticos que quieren usar el poder de la economía para convertir la galaxia en un lugar mejor. Están muy dispuestos a concertar acuerdos con otras naciones y, por lo general, intentarán mantenerse alejados de los conflictos militares."
+ 
+ #######################################################
+ ### GOVERNMENTS                                     ###
+ #######################################################
+ 
+ gov_am_civics_locust_corporation:0 "Megacorporación langosta"
+ gov_am_civics_locust_corporation_desc:0 "Este gobierno es una forma de oligarquía plutocrática, donde todo el estado se ha organizado como una empresa comercial masiva supervisada por una junta directiva."
+  
+ #######################################################
+ ### EVENTS                                          ###
+ #######################################################
+ 
+ events_am_civics_locust_capitalism.8.name:0 "Muerte inminente"
+ events_am_civics_locust_capitalism.8.desc:0 "Últimas noticias de [this.GetName]: Investigadores locales afirman que es probable que el planeta no pueda sustentar la vida durante mucho más tiempo. Sus modelos predicen que nuestra explotación industrial conducirá inevitablemente a un evento de extinción masiva en menos de una década.\n\nLa población del planeta ha entrado en un estado de pánico masivo y la gente se está preparando para dejar sus hogares. Si lo hacen, es probable que las líneas de producción de [this.GetName] colapsen."
+ events_am_civics_locust_capitalism.8.option.a:0 "Que así sea entonces."
+ events_am_civics_locust_capitalism.8.option.a.tt:0 "§REs probable que el planeta sea destruido dentro de la década.§!\n\n§YÉxodo masivo:§!\nEstabilidad: §R-40§!\nCada mes existe la posibilidad de que una £pop£ población migre de [this.GetName] a otro planeta seleccionado al azar hasta que sólo queden unos pocos o hasta que el planeta sea inevitablemente destruido."
+ events_am_civics_locust_capitalism.8.option.b:0 "Debemos alcanzar nuestros objetivos de producción. ¡Páralos!"
+ events_am_civics_locust_capitalism.8.option.b.tt:0 "§REs probable que el planeta sea destruido dentro de la década.§!\n\n§YPánico en masa:§!\nEstabilidad: §R-10§!\n\nA la £pop£ población no se les permite salir del planeta y se ven obligados a continuar trabajando, pero morirán cuando el planeta sea inevitablemente destruido si no se reubican manualmente."
+ 
+ events_am_civics_locust_capitalism.10.name:0 "Planeta destruido"
+ events_am_civics_locust_capitalism.10.desc:0 "[this.GetName] se ha roto debido al abuso continuo que el planeta tuvo que recibir de nuestra maquinaria industrial. Toda la vida en la superficie terminó casi de inmediato cuando el planeta fue destrozado.\n\nSi bien este evento es trágico, no romperá nuestro espíritu. Algunos Ejecutivos ya han propuesto que podríamos comercializar lo que quede en la superficie como reliquias de una 'civilización perdida' para recuperar algunas de nuestras pérdidas."
+ events_am_civics_locust_capitalism.10.option.a:0 "A veces, se deben hacer sacrificios en nombre del beneficio."
+ events_am_civics_locust_capitalism.10.option.a.tt:0 "Nuestra colonia en [this.GetName] fue destruida."
+ 
+ events_am_civics_military_industrial_complex.2.name:0 "Industria de guerra"
+ events_am_civics_military_industrial_complex.2.desc:0 "Los comerciantes de [this.GetName] están encantados de ver que nos hemos metido en un conflicto. Sin duda, esta guerra reunirá a nuestra gente, hará crecer nuestra esfera de influencia, aumentará nuestra productividad y producirá muchas ganancias."
+ events_am_civics_military_industrial_complex.2.option.a:0 "Fondos para los fabricantes de armas"
+ events_am_civics_military_industrial_complex.2.option.b:0 "Fondos para la industria armamentística"
+ events_am_civics_military_industrial_complex.2.option.c:0 "Fondos para los astilleros"
+ 
+ events_am_civics_locust_capitalism.9.name:0 "El estado de [this.GetName]"
+ events_am_civics_locust_capitalism.9.desc:0 "Nuestro planeta capital, [this.GetName], ha perdido una gran parte de sus recursos. Las investigaciones indican que se volverá inhabitable en unas pocas décadas.\n\nActualmente estamos suprimiendo esta información, pero parece poco probable que podamos evitar que se filtre al público, y una vez que lo haga, es probable que se produzca un pánico masivo.\n\nEsto es ... trágico, por supuesto. Pero también una oportunidad de obtener ganancias: ahora podría ser el mejor momento para invertir en proyectos de construcción, porque es casi seguro que se necesitarán en el futuro."
+ events_am_civics_locust_capitalism.9.option.a:0 "¿Dijiste ... que se puede ganar dinero?"
+ 
+ events_am_civics_locust_capitalism.21.name:0 "¡Brecha del casco!"
+ events_am_civics_locust_capitalism.21.desc:0 "El fuerte y chirriante ruido de las aleaciones dobladas bajo inmensas presiones resonó en el hábitat cuando, de repente, en un instante, toda la estructura cedió. El hábitat estaba en proceso de romperse cuando algún antiguo mecanismo de seguridad debió haber activado un gran escudo que ahora rodea todo el hábitat.\n\nAfortunadamente, logramos evacuarlo justo a tiempo." 
+ events_am_civics_locust_capitalism.21.option.a:0 "Trágico. Sin embargo, es posible que podamos recuperar partes de él ..."
+  
+ #######################################################
+ ### JOBS                                            ###
+ #######################################################
+ 
+ job_am_civics_shady_merchant:15 "Shady Merchant"
+ job_am_civics_shady_merchant_plural:15 "Shady Merchants"
+ job_am_civics_shady_merchant_desc:15 "They look and act a lot like criminals, but apparently they're certified merchants selling their perfectly legal goods and services."
+ mod_job_am_civics_shady_merchant_per_crime:15 "§G+1§! $job_am_civics_shady_merchant$ Job per $VALUE$ Planet Crime"

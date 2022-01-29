@@ -1,0 +1,14 @@
+
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_starbase_building_am_civics_tourist_quarters"
+		texturefile = "gfx/interface/icons/modules/starbase_building_am_civics_tourist_quarters.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_origin_am_civics_locust_capitalism"
+		texturefile = "gfx/event_pictures/origins/origin_am_civics_locust_capitalism.dds"
+		alwaystransparent = yes
+	}
+}

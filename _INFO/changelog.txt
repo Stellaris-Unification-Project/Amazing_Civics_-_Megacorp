@@ -1,0 +1,170 @@
+
+
+v1
+
+Initial Release
+
+v2
+
+Civics
+- Introduced a new Civic: Military Industrial Complex. 
+  -> Choose a combat bonus after entering a war. Slightly decreased Trade Value generation if at peace for too long.
+  
+AI
+- Can no longer spawn with the Social Media Giant trait. Reason: The bonuses included in this Civic are too complex for me to balance within the framework of the AI, so this trait did essentially just weaken the AI if taken.
+- Will now choose the Locust Capitalism Civic less often by 50% (most other traits are now 5 times as likely to be chosen) Reason: This Civic has quite a large impact on the empires that start next to this AI. This should only happen every now and then.
+- Will now Charitable Efforts at the same rate as it picks most other traits. Reason: The reduced rate was unintentional.
+
+Bugfixes
+- Replaced the Corporate Growth Planet Modifier Icon with the one that was supposed to be used (was unintentionally using the one intended for Locust Capitalism Planet Modifier instead)
+
+v2.1
+
+This update focuses mostly on making the Locust Capitalist Civic a lot smoother to play, and to allow them to transition into a more traditional endgame.
+
+Technologies
+- New Technology - Recycling Industries (Tier 3): A Technology exclusive to the Locust Capitalist Civic that reduces the speed at which planets gain "Drained Planet" modifiers and the speed with which Orbital Mining Deposits deplete by by 50%
+- New Technolgy - Sustainability Industries (Tier 5): A Technology exclusive to the Locust Capitalist Civic that stops planets from gaining "Drained Planet" modifiers, removes all existing "Drained Planet" modifiers, and stops Orbital Mining Deposits from depleting.
+ 
+Civics
+- Locust Capitalist Civic: Capital now starts with "Drained Planet - Stage 4" instead of Stage 5.
+- Locust Capitalist Civic: Habitats, Ringworlds and Ecumenopolises are no longer affected by the "Drain Planet" system.
+- Locust Capitalist Civic: The rate at which stations deplete has been reduced.
+- Locust Capitalist Civic: When the first planet in an empire slowly nears destruction, a new Event warns the owner of the problems that they're about to face. When this happens, planet construction costs are decreased by 25% and Planet Production Speed is increased by 25% for 10 years.
+- Locust Capitalist Civic: Automatic Resettlement now starts with workers (farmers, miners, technicians, clerks), then focuses on specialists, and only then opens up to other jobs. This prevents additional pops from becoming specialists/rulers during this process and should make unemployment problems on their target planets a lot less prevalent.
+- Locust Capitalist Civic: Evacuating a planet now reduces Stability on the Planet by 40.
+
+Localization
+- Now included Chinese Localization (which was created by Rui_MS https://steamcommunity.com/profiles/76561198254983643/)
+
+v3
+
+Civics
+- Added a new Civic: Banking Giant. Has an empire-unique building that generates trade value based on the amount of Energy Credits in the stockpile.
+- Locust Capitalist Civic: AIs no longer randomly spawn with this Civic. 
+- Locust Capitalist Civic: "Mining" Deposits on Stars no longer deplete. Locusts are greedy, but draining a whole star is slightly beyond their abilities.
+
+Code
+- Added prefixes to the IDs of all Civics to improve compatibility with similar mods
+- Restructured / rewrote a lot of the code to make it easier to read and understand
+
+Bugfixes
+- Fixed a scripting error with the Locust Capitalism Civic that caused Mining Deposits to deplete too quickly if multiple mining deposits shared the same solar system. Depletion rates are now properly tied to how long each individual Mining Deposit has been in use by the Locust.
+
+v3.1
+
+Bugfixes
+- Social Media Hub: Is now properly restricted to one per planet.
+
+v4
+
+General
+- Updated to work with game version 2.6.*.
+- Corrected several Tooltip Errors
+
+Civics
+- Locust Capitalism: New restriction - cannot be combined with the Doomsday Origin.
+
+v5
+
+Civics
+- Locust Capitalism: Mining Deposits no longer decay on planets that have a megastructure attached to them
+- Locust Capitalism: If the Void Dweller Origin is taken, the initial Habitat is no longer affected by the "Drained Planet" Modifier, and won't explode. Instead, a short event chain has been added specifically for this combination to spice things up. 
+- Locust Capitalism: No longer compatible with the Shattered Ring Origin
+
+Bugfixes
+- Locust Capitalism: Starting Habitats and Ringworlds are no longer affected by the "Drained Planet" debuff, and won't explode over time. 
+- Banking Giant: Players can now rebuild their Stellar Banking Institute if they lose it. The game checks this at the start of each year, so you might have to wait a few months.
+
+v6
+
+General
+- Now supports Stellaris 2.7.
+- Fixed missing localization files. Unsupported languages will now show english texts instead of blank text keys.
+
+v6.1
+- Now supports Stellaris 2.8.
+
+v7
+
+General
+- Now Supports Stellaris 3.0.
+
+Civics
+- Stellar Travel Agency: Unique Starbase Building now also increases Automatic Resettlement Chance by 25%
+- Charitable Efforts: Reworked. Opinion Modifier now applies dynamically to valid empires. Can now be added or removed after game start.
+
+UI
+- Changed the formatting of many effects to be in line with the formatting of the unmodded game
+- Updated the textures to proper format to make them work with 3.0
+- Fixed a few typos
+
+v8
+
+General
+- Civics will now stay valid when the Empire becomes the Imperial Core
+
+Balance
+- Knowledge is Profit: Effect increased to +100 Energy and +20 Influence
+- Corporate Growth: Effect duration extended to 20 years, and added +15% Growth from Immigration
+- Off-World Investors: Can now upgrade Deposits up to 10 Trade Value, and the chance for an upgrade each year has been increased significantly
+- Banking Giant: Stellar Banking Institute Upkeep increased from 1 to 6, and its effect is now capped at 50.000 Energy (was 100.000)
+- Social Media Giant: Base Influence Cost of the unique decisions of this Civic have been reduced to 25
+- Stellar Travel Agency: Starbase Building now properly shows the Unity it creates
+
+Bugfixes
+- Banking Giant: If acquired by reforming the government, the Stellar Banking Institute can now be constructed immediately, instead of unlocking at the beginning of the following year.
+- Charitable Efforts: Corrected an error that caused the opinion modifier to be applied to the country that owns the civic, instead of other countries.
+
+Performance
+- The Off World Investors Script now checks planets 3 days after the year has rolled over to avoid contributing to year-rollover lag in large empires.
+
+v9
+
+Civics
+Locust Capitalism: 
+- Converted into an Origin
+- Void Dweller Interactions removed. 
+- Bonuses from taking this Origin have been increased significantly, but the decay process of planets and stations has also been sped up.
+- While evacuating a planet, pop resettlement chance has been greatly increased
+
+- Banking Giant: Updated to make use of the changes to variables in 3.1. Interest rate is now calculated accurately directly from the energy stockpile, instead of being estimated and manually applied. The trade value is granted as an empire modifier, and no longer generated by the bank itself. The cap of 50000 stored energy has been removed. 
+
+v10
+
+General
+- Fixed the art of the Stellar Banking Institute to be a lot less blurry.
+
+v11
+
+Civics
+- Civic added: Mining Consortium. Miners (Including those that mine advanced resources) produce -1 Minerals, but +1 Alloys.
+- Civic added: Guild of Engineers. Reduces Habitat Influence cost by 20%, and adds +1 Megastructure Capacity
+- Civic added: Gain a Merchant per 25 Crime. All planets gain 40 Crime; Capital starts with the Crime Lord Deal Modifier 
+- Military-Industrial Complex: Significantly increased the effects from the choice available after starting a war. However, the Trade Value penalty while not under the influence of one of those effects has also been increased to 10%.
+
+Bugfixes:
+- Band-aided the Chinese Translation and updated the localization file with a lot of the changes that were made in recent updates. They should now once again properly show their Chinese texts if translations are available. Also added English fallback texts for some of the new content that isn't localized yet.
+- Banking Giant: Now properly state that Trade Value is applied as a planet modifier, not an Empire Modifier
+- Locust Capitalism: Now properly uses its custom picture in the selection screen when creating a new empire instead of the default fallback option
+
+v12
+- Spanish Translation added, made by Alexander (https://steamcommunity.com/profiles/76561198806487951/)
+
+v13
+- Chinese Translation updated to account for the new content
+
+v14
+
+- German Translation added
+
+Bugfixes
+- Omni Police Station: Now correctly states that it produces 20 Energy when Crime is below 20. Previously it incorrectly stated that it produces 16.
+
+v15
+
+Civics
+- Criminal Connections: Redesigned. Crime on planets owned by a Megacorp with this Civic does no longer cause the Criminal Underworld Modifier to appear, and the number of Criminal Jobs a planet can have is reduced by 5 (countering the potential total number of Criminals created by the Crime Lord Deal completely). No longer grants regular Merchant Jobs, and instead grants a Shady Merchant Job per 20 Crime. Shady Merchants are definitely not criminals, produce 8 Trade Value from their 110% legal goods, and cannot be disabled.
+- Knowledge is Profit: Influence from surveying a system reduced to 10 (was 20)
+- Urban Pacification Tools: Energy generated by the Omni Police Station increased to 20 (was 10), or 40 (was 20) if Crime is below 20
+- Criminal Connections and Urban Pacification Tools are now mutually exclusive.
