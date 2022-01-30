@@ -261,8 +261,8 @@ country_event = {
 									NOR = {
 										has_modifier = static_modifier_am_civics_planet_decay_8
 										has_modifier = static_modifier_am_civics_planet_decay_9
-									} 
-									NOT = {has_modifier = static_modifier_am_civics_planet_decay_10 }
+										has_modifier = static_modifier_am_civics_planet_decay_10
+									}
 									is_under_colonization = no									
 								}
 								log = " -- Resettled to: [this.GetName]."
@@ -285,8 +285,8 @@ country_event = {
 										NOR = {
 											has_modifier = static_modifier_am_civics_planet_decay_8
 											has_modifier = static_modifier_am_civics_planet_decay_9
-										} 
-										NOT = {has_modifier = static_modifier_am_civics_planet_decay_10 }
+											has_modifier = static_modifier_am_civics_planet_decay_10
+										}
 										is_under_colonization = no									
 									}
 									log = " -- Resettled to: [this.GetName]."
@@ -309,8 +309,8 @@ country_event = {
 										NOR = {
 											has_modifier = static_modifier_am_civics_planet_decay_8
 											has_modifier = static_modifier_am_civics_planet_decay_9
-										} 
-										NOT = {has_modifier = static_modifier_am_civics_planet_decay_10 }
+											has_modifier = static_modifier_am_civics_planet_decay_10
+										}
 										is_under_colonization = no									
 									}
 									log = " -- Resettled to: [this.GetName]."

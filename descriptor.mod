@@ -6,5 +6,5 @@ tags={
 	"Events"
 }
 name="Amazing Civics - Megacorp"
-supported_version="3.2.*"
+supported_version="3.2.2"
 remote_file_id="1960052542"
