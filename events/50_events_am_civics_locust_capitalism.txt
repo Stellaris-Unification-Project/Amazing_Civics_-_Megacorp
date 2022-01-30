@@ -38,8 +38,10 @@ country_event = {
 			every_planet_within_border = {
 				limit = {
 					has_mining_station = yes
-					NOT = { has_planet_flag = has_megastructure }
-					NOT = { has_planet_flag = megastructure }
+					NOR = {
+						has_planet_flag = has_megastructure
+						has_planet_flag = megastructure
+					}
 					is_star = no 
 				}
 				planet_event = { id = events_am_civics_locust_capitalism.2 days = 30 random = 300 }
@@ -256,8 +258,10 @@ country_event = {
 							log = "Resettle Pop from [this.GetName]. (Workers only)"
 							random_owned_planet = {
 								limit = { 
-									NOT = {has_modifier = static_modifier_am_civics_planet_decay_8 } 
-									NOT = {has_modifier = static_modifier_am_civics_planet_decay_9 } 
+									NOR = {
+										has_modifier = static_modifier_am_civics_planet_decay_8
+										has_modifier = static_modifier_am_civics_planet_decay_9
+									} 
 									NOT = {has_modifier = static_modifier_am_civics_planet_decay_10 }
 									is_under_colonization = no									
 								}
@@ -278,8 +282,10 @@ country_event = {
 								log = "Resettle Pop from [this.GetName]. (Specialists only)"
 								random_owned_planet = {
 									limit = { 
-										NOT = {has_modifier = static_modifier_am_civics_planet_decay_8 } 
-										NOT = {has_modifier = static_modifier_am_civics_planet_decay_9 } 
+										NOR = {
+											has_modifier = static_modifier_am_civics_planet_decay_8
+											has_modifier = static_modifier_am_civics_planet_decay_9
+										} 
 										NOT = {has_modifier = static_modifier_am_civics_planet_decay_10 }
 										is_under_colonization = no									
 									}
@@ -300,8 +306,10 @@ country_event = {
 								log = "Resettle Pop from [this.GetName]. (Free For All)"
 								random_owned_planet = {
 									limit = { 
-										NOT = {has_modifier = static_modifier_am_civics_planet_decay_8 } 
-										NOT = {has_modifier = static_modifier_am_civics_planet_decay_9 } 
+										NOR = {
+											has_modifier = static_modifier_am_civics_planet_decay_8
+											has_modifier = static_modifier_am_civics_planet_decay_9
+										} 
 										NOT = {has_modifier = static_modifier_am_civics_planet_decay_10 }
 										is_under_colonization = no									
 									}

@@ -142,12 +142,12 @@ building_am_civics_social_media_hub = {
 	triggered_desc = {
 		trigger = {
 			has_building = building_am_civics_social_media_hub
-			OR = {
-				NOT = { has_planet_flag = decision_am_civics_building_social_media_hub_1_flag }
-				NOT = { has_planet_flag = decision_am_civics_building_social_media_hub_2_flag }
-				NOT = { has_planet_flag = decision_am_civics_building_social_media_hub_3_flag }
-				NOT = { has_planet_flag = decision_am_civics_building_social_media_hub_4_flag }
-				NOT = { has_planet_flag = decision_am_civics_building_social_media_hub_5_flag }
+			NAND = {
+				has_planet_flag = decision_am_civics_building_social_media_hub_1_flag
+				has_planet_flag = decision_am_civics_building_social_media_hub_2_flag
+				has_planet_flag = decision_am_civics_building_social_media_hub_3_flag
+				has_planet_flag = decision_am_civics_building_social_media_hub_4_flag
+				has_planet_flag = decision_am_civics_building_social_media_hub_5_flag
 			}
 		}
 		text = building_am_civics_social_media_hub_triggered_desc_constructed
